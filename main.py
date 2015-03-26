@@ -180,7 +180,7 @@ class Signup(BaseHandler):
     		params['error_email'] = "That's not a valid email."
     		have_error = True
 
-    	confirming_link = 'https://dubhacking.appspot.com/confirming/'+str(username)+'/'+'875451631231131321'
+    	confirming_link = 'https://dubhacking.appspot.com/confirming/'+str(username)+'/'+'CONFIRM_BIG_INTEGER'
     	cparam = dict(confirming_link=confirming_link)
 
     	if have_error:
@@ -662,8 +662,8 @@ class Submit(BaseHandler):
 
 	def post(self):
 		have_error = False
-		api_key = 'hackerrank|227278-163|b31d351c1202e81ee5ea88b7061585b81a68babf'
-		run_url = 'http://api.hackerrank.com/checker/submission.json'
+		api_key = 'KEY' #Taken down for security.
+		run_url = 'RUN_URL' #Taken down for security.
 
 		username_s = self.session.get('username')
 		username_session = str(username_s)
