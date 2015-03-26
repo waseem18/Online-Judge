@@ -1,0 +1,79 @@
+<!--© Copyright Wasim Thabraze.
+    License: MIT
+    'Dubhacking' name is copyright of as per 2015 and cannot be used unless or untill the prior permission.
+    Contact: www.thabraze.in | email: wasim@thabraze.in
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Login - Dubhacking</title>
+	<meta name="Wasim Thabraze, WASIM,www.thabraze.in, gitpromote,waseem18" content="Dubhacking is an online judge. © Copyright 2015 Wasim Thabraze | Dubhacking" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> 
+	<style> 
+    body {
+        background: url("images/code.png");
+        background-size: 1800px 1600px;
+        background-repeat: no-repeat;
+        }
+    </style>
+    <style type="text/css">
+      /*.label {text-align: right}*/
+      .error {color: red}
+    </style>
+</head>
+<body>
+	
+	<div class="logo" style="margin-left: 555px">
+                <h1 style="color: white; font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Dubhacking</h1>
+     </div>
+	
+	
+	<!-- MAIN CONTENT -->
+	<div id="container wrapper" style="margin-top: 50px">
+		<form method="POST" id="login-form">
+		
+			<fieldset>
+
+				<p>
+					<label style="color: white; font size: 10" for="login-username">username</label>
+					<input type="text" name="login_username" class="round full-width-input" placeholder="Username"/>
+				</p>
+
+				<p>
+					<label style="color: white; font size: 20" for="login-password">password</label>
+					<input type="password" name="login_password" class="round full-width-input" placeholder="Password" />
+				</p>
+				<p class="error">{{error_verify}}</p>
+				<p class="error">{{login_empty_error}}</p>
+				<p class="error">{{username_not_present}}</p>
+				<p class="error">{{not_confirmed}}</p>
+				<p style="color: white; font size: 30px">I agree to dubhacking's policies.</p>
+				<input type="submit" class="button round blue image-right ic-right-arrow">
+
+			</fieldset>
+
+			<br/><!--div class="information-box round">Just click on the "LOG IN" button to continue, no login information required.</div-->
+
+		</form>
+		
+	</div>
+	
+	
+	
+	<div id="footer" style="margin-top: 240px; margin-left: 30px">
+
+		        <p style="color: white"><a href="/" style="text-decoration: none; color: White">Home  </a> | <a href="#" style="text-decoration: none; color: White">Terms  </a> | © Copyright 2015 Wasim Thabraze. All rights reserved.</p>
+
+	
+	</div>
+</body>
+</html>

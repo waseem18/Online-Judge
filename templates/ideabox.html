@@ -1,0 +1,99 @@
+<!--© Copyright Wasim Thabraze.
+    License: MIT
+    'Dubhacking' name is copyright of Wasim Thabraze as per 2015 and cannot be used unless or untill the prior permission.
+    Contact: www.thabraze.in | email: wasim@thabraze.in
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Wasim Thabraze, WASIM,www.thabraze.in, gitpromote,waseem18" content="Dubhacking is an online judge. © Copyright 2015 Wasim Thabraze | Dubhacking" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Dubhacking-Submit</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script src="js/timer.js"></script>
+    <style>
+    .submitLink {
+        background-color: transparent;
+        text-decoration: none;
+        color: blue;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+    <script type="text/javascript">
+    function change( el )
+    {
+        if ( el.value === "Submit Idea" )
+        el.value = "Submitting your Idea...";
+}
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo" style="margin-left: 95px; margin-top: -16px">
+                <h2 style="font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Dubhacking</h2>
+     </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav" style="padding:3px;margin-left:600px">
+        <ul class="nav nav-pills">
+          <li><a href="https://dubhacking.appspot.com/user/{{username_session}}">{{username_session}}</a></li>
+         <li><a href="https://dubhacking.appspot.com/problems">Problems</a></li>
+          <li><a href="https://dubhacking.appspot.com/scoreboard">Scoreboard</a></li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://dubhacking.appspot.com/submit">Submit code</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="https://dubhacking.appspot.com/logout">Signout</a></li>
+          </ul>
+        </li>
+
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div style="margin-top: 50px">
+    <form method="POST">
+        <div style="margin-left: 350px">
+    </div>
+    <br>
+    <br>
+    <textarea name = "submitted_idea" style="width: 600px; margin-left: 350px" class="form-control" rows="13"></textarea><br>
+    <!--button style="margin-left: 350px" type="submit" id="myButton" data-loading-text="Submitting..." class="btn btn-primary" autocomplete="off">
+        Submit Code
+    </button-->
+    <input style="margin-left: 350px" class="btn btn-large btn-primary" type="submit" value="Submit Idea" onclick="return change(this);" />
+    <!--button style="margin-left: 350px" class="btn btn-large btn-primary" type="submit" value="Submit Code" onclick="return change(this);">Submit Code</button-->
+
+    </div>
+    </form>
+</body>
+</html>

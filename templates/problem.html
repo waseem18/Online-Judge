@@ -1,0 +1,68 @@
+<!--© Copyright Wasim Thabraze.
+    License: MIT
+    'Dubhacking' name is copyright of Wasim Thabraze as per 2015 and cannot be used unless or untill the prior permission.
+    Contact: www.thabraze.in | email: wasim@thabraze.insrc
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Wasim Thabraze, WASIM,www.thabraze.in, gitpromote,waseem18" content="Dubhacking is an online judge. © Copyright 2015 Wasim Thabraze | Dubhacking" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Dubhacking-Problem</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <script src="js/timer.js"></script>
+    <style>
+    .submitLink {
+        background-color: transparent;
+        text-decoration: none;
+        color: blue;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="logo" style="margin-left: 555px">
+                <h1 style="font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Dubhacking</h1>
+     </div>
+     <div style="font size: 32px; display: inline-block" id="counter"></div>
+
+     <div style="float: right">
+        <p style="font-size: 16px; margin-right: 3cm"><a href="https://dubhacking.appspot.com/user/{{username_session}}">{{username_session}} </a>|<a href="https://dubhacking.appspot.com/scoreboard"> Scoreboard </a> | <a href="https://dubhacking.appspot.com/logout"> Logout</a></p>
+    </div>
+    <input type="hidden" name="prob" value="A"><p>Problem : A | Time limit: 2sec | Memory: 200B | <a class="submitLink" href="https://dubhacking.appspot.com/submit">Submit code</a></p>
+    <div class="jumbotron" style="margin-top: 17px">
+        <p style="font-size: 14px; margin-left: 15px">   Fox Ciel starts to learn programming. The first task is drawing a fox! However, that turns out to be too hard for a beginner, so she decides to draw a snake instead.
+            <br>A snake is a pattern on a n by m table. Denote c-th cell of r-th row as (r, c). The tail of the snake is located at (1, 1), then it's body extends to (1, m), then goes down 2 rows to (3, m), then goes left to (3, 1) and so on.<br>
+
+        Your task is to draw this snake for Fox Ciel: the empty cells should be represented as dot characters ('.') and the snake cells should be filled with number signs ('#').
+        <br>
+        Consider sample tests in order to understand the snake pattern.
+        <br>
+        <br>
+        <b>Input:</b> <br>
+        The only line contains two integers: n and m (3 ≤ n, m ≤ 50).
+        <br>
+        <br>
+        n is an odd number.
+        <br><br>
+        <b>Output:</b>
+        <br>
+        Output n lines. Each line should contain a string consisting of m characters. Do not output spaces.</p>
+    </div>
+    <div class="page-header">
+        <b>Sample Input:</b><br>
+        <p>3 3</p>
+        <br>
+        <b>Sample Output:</b><br>
+        <p>###<br>
+        ..#<br>
+        ###</p>
+        <br>
+    </div>
+</body>
+</html>

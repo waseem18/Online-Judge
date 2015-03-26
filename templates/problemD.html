@@ -1,0 +1,69 @@
+<!--© Copyright Wasim Thabraze.
+    License: MIT
+    'Dubhacking' name is copyright of Wasim Thabraze as per 2015 and cannot be used unless or untill the prior permission.
+    Contact: www.thabraze.in | email: wasim@thabraze.insrc
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Wasim Thabraze, WASIM,www.thabraze.in, gitpromote,waseem18" content="Dubhacking is an online judge. © Copyright 2015 Wasim Thabraze | Dubhacking" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Dubhacking-Problem</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <script src="js/timer.js"></script>
+    <style>
+    .submitLink {
+        background-color: transparent;
+        text-decoration: none;
+        color: blue;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="logo" style="margin-left: 555px">
+                <h1 style="font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Dubhacking</h1>
+     </div>
+     <div style="font size: 32px; display: inline-block" id="counter"></div>
+
+     <div style="float: right">
+        <p style="font-size: 16px; margin-right: 3cm"><a href="https://dubhacking.appspot.com/user/{{username_session}}">{{username_session}} </a>|<a href="https://dubhacking.appspot.com/scoreboard"> Scoreboard </a> | <a href="https://dubhacking.appspot.com/logout"> Logout</a></p>
+    </div>
+    <input type="hidden" name="prob" value="A"><p>Problem : Character Count | Time limit: 0.02secs | Memory: 500B | <a class="submitLink" href="https://dubhacking.appspot.com/submit">Submit code</a></p>
+    <div class="jumbotron" style="margin-top: 17px">
+        <p style="font-size: 14px; margin-left: 15px">    A straight forward problem again!<br><br>Given a string S and few characters, Output the given character and count of the character in the string in the ascending order of their count. If two characters have same count, then print them in order of their occurence in alphabets.
+        <br>
+        <br>
+        <b>Constraints: </b><br>
+            1<=length|S|<=10 power 20.<br>
+            1<=n<=2000000000.<br>
+            'S' consists of only lower case alphabets.
+        <br><br>
+        <b>Input:</b> <br>
+            Each test case consists of three lines.<br>
+            Line1 : String S<br>Line2 : 'n', number of characters<br>Line3 : n characters seperated by spaces.
+        <br><br>
+        <b>Output:</b>
+        <br>
+        Output n lines, each line containing the character and it's count seperated by a single space. Don't forget to print the output in the sorted order of the count of characters<br>
+        If count of two characters are same, print them in the lexical order.</p>
+    </div>
+    <div class="page-header">
+        <b style="margin-left: 15px">Sample Input:</b><br>
+        <p style="font-size: 14px; margin-left: 15px">science
+
+        <br><br>
+        <b>Sample Output:</b><br>
+        i 1<br>n 1<br>s 1<br>c 2<br>e 2</p>
+        <br>
+        <br>
+        </p>
+
+    </div>
+</body>
+</html>

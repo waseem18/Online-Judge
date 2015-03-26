@@ -1,0 +1,106 @@
+<!--© Copyright Wasim Thabraze.
+    License: MIT - DBH781647AW4
+    'Dubhacking' name is copyright of Wasim Thabraze as per 2015 and cannot be used unless or untill the prior permission.
+    Contact: wasim@thabraze.in
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Wasim Thabraze, WASIM,www.thabraze.in, gitpromote,waseem18" content="Dubhacking is an online judge. © Copyright 2015 Wasim Thabraze | Dubhacking" />
+    <!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
+    <title>Dubhacking-Submit</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script src="js/timer.js"></script>
+    <style>
+    .submitLink {
+        background-color: transparent;
+        text-decoration: none;
+        color: blue;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+    <style type="text/css">
+      /*.label {text-align: right}*/
+      .error {color: red}
+    </style>
+    <script type="text/javascript">
+    function change( el )
+    {
+        if ( el.value === "Submit Changes" )
+        el.value = "Submitting Changes...";
+}
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo" style="margin-left: 95px; margin-top: -16px">
+                <h2 style="font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Dubhacking</h2>
+     </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav" style="padding:3px;margin-left:600px">
+        <ul class="nav nav-pills">
+          <li><a href="https://dubhacking.appspot.com/user/{{username_session}}">{{fullname}}</a></li>
+         <li><a href="https://dubhacking.appspot.com/problems">Problems</a></li>
+          <li><a href="https://dubhacking.appspot.com/scoreboard">Scoreboard</a></li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://dubhacking.appspot.com/submit">Submit code</a></li>
+            <li class="divider"></li>
+            <li><a href="https://dubhacking.appspot.com/settings">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="https://dubhacking.appspot.com/logout">Signout</a></li>
+          </ul>
+        </li>
+
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<form method="POST" style="margin-left: 350px; margin-top: 100px">
+    Fullname             <input style="margin-left: 145px" type="text" name="fullname" value="{{fullname}}"><br><br>
+    <!--New password         <input style="margin-left: 112px" type="password" name="new_password"><br><br>
+    Confirm new password <input style="margin-left: 62px" type="text" name="c_new_password"><br><br>
+    <Facebook URL         <input style="margin-left: 112px" type="text" name="fb_url"><br><br>
+    Twitter URL          <input style="margin-left: 131px" type="text" name="tw_url"><br><br-->
+    Portfolio            <input style="margin-left: 153px" type="text" name="portfolio" value="{{portfolio}}"><br>
+    <p style="margin-left: 210px" class="error">{{tagline_error}}</p>
+    Tagline              <input style="margin-left: 158px" type="text" name="tagline" value="{{tagline}}"><br><br>
+    About me             <textarea name = "aboutme" style="width: 400px; margin-left: 205px" class="form-control" rows="3">{{aboutme}}</textarea><br>
+    Profile Picture      <input style="margin-left: 112px" size="50" type="text" name="dp_link" value="{{dp_link}}"><br><br>
+    <p style="margin-left: 210px">Place URL of the images here to change your profile and cover images.</p>
+    Cover photo          <input type="text" name="cp_link" style="margin-left: 122px;" size="50" value="{{cp_link}}"><br><br>  
+    Current Password     <input style="margin-left: 90px" type="password" name="password" placeholder="Enter your password"><br>
+    <p style="margin-left: 230px" class="error">{{error_verify}}</p>
+    <input class="btn btn-large btn-primary" type="submit" value="Submit Changes" onclick="return change(this);" />
+</form>
+</body>
+</html>
+    

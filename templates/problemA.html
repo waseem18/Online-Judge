@@ -1,0 +1,65 @@
+<!--© Copyright Wasim Thabraze.
+    License: MIT
+    'Dubhacking' name is copyright of Wasim Thabraze as per 2015 and cannot be used unless or untill the prior permission.
+    Contact: www.thabraze.in | email: wasim@thabraze.insrc
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Wasim Thabraze, WASIM,www.thabraze.in, gitpromote,waseem18" content="Dubhacking is an online judge. © Copyright 2015 Wasim Thabraze | Dubhacking" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Dubhacking-Problem</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <script src="js/timer.js"></script>
+    <style>
+    .submitLink {
+        background-color: transparent;
+        text-decoration: none;
+        color: blue;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="logo" style="margin-left: 555px">
+                <h1 style="font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Dubhacking</h1>
+     </div>
+     <div style="font size: 32px; display: inline-block" id="counter"></div>
+
+     <div style="float: right">
+        <p style="font-size: 16px; margin-right: 3cm"><a href="https://dubhacking.appspot.com/user/{{username_session}}">{{username_session}} </a>|<a href="https://dubhacking.appspot.com/scoreboard"> Scoreboard </a> | <a href="https://dubhacking.appspot.com/logout"> Logout</a></p>
+    </div>
+    <input type="hidden" name="prob" value="A"><p>Problem : The easiest problem | Time limit: 0.03secs | Memory: 2MB | <a class="submitLink" href="https://dubhacking.appspot.com/submit">Submit code</a></p>
+    <div class="jumbotron" style="margin-top: 17px">
+        <p style="font-size: 14px; margin-left: 15px">    Given two positive integers a and b each of which is greater than 10^20.<br><br>
+        Your task is to find the sum of the given two integers. Simple. Isn't it?
+        <br>
+        <br>
+        <b>Constraints: </b><br>
+            a>10^20 and b>10^20<br>
+            Number of testcases t <= 10.
+        <br><br>
+        <b>Input:</b> <br>
+            First line of input contains integer 't'  representing the number of test cases.<br>
+            Each test case contains two integers seperated by a single space.
+        <br><br>
+        <b>Output:</b>
+        <br>
+        For each test case print the sum of the two integers in new line.</p>
+    </div>
+    <div class="page-header">
+        <b style="margin-left: 15px">Sample Input:</b><br>
+        <p style="font-size: 14px; margin-left: 15px">3<br>100000000000000000000000  200000000000000000000000<br>321547895412358741242  514261470231054879654<br>111111111111111111111111111111  222222222222222222222222222222
+
+        <br><br>
+        <b>Sample Output:</b><br>
+        30000000000000000000000<br>835709276643303621996<br>333333333333333333333333333333</p>
+        <br>
+    </div>
+</body>
+</html>

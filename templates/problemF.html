@@ -1,0 +1,64 @@
+<!--© Copyright Wasim Thabraze.
+    License: MIT
+    'Dubhacking' name is copyright of Wasim Thabraze as per 2015 and cannot be used unless or untill the prior permission.
+    Contact: www.thabraze.in | email: wasim@thabraze.insrc
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Wasim Thabraze, WASIM,www.thabraze.in, gitpromote,waseem18" content="Dubhacking is an online judge. © Copyright 2015 Wasim Thabraze | Dubhacking" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Dubhacking-Problem</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <script src="js/timer.js"></script>
+    <style>
+    .submitLink {
+        background-color: transparent;
+        text-decoration: none;
+        color: blue;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="logo" style="margin-left: 555px">
+                <h1 style="font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Dubhacking</h1>
+     </div>
+     <div style="font size: 32px; display: inline-block" id="counter"></div>
+
+     <div style="float: right">
+        <p style="font-size: 16px; margin-right: 3cm"><a href="https://dubhacking.appspot.com/user/{{username_session}}">{{username_session}} </a>|<a href="https://dubhacking.appspot.com/scoreboard"> Scoreboard </a> | <a href="https://dubhacking.appspot.com/logout"> Logout</a></p>
+    </div>
+    <input type="hidden" name="prob" value="A"><p>Problem : The Dynamic phobia | Time limit: 0.04secs | Memory: 800B | <a class="submitLink" href="https://dubhacking.appspot.com/submit">Submit code</a></p>
+    <div class="jumbotron" style="margin-top: 17px">
+        <p style="font-size: 14px; margin-left: 15px">    As we know that Vinay went to the library to learn Algorithms, he took a book of String theory and started reading it.<br> The book confused him so much that he got a phobia towards palindromes. He used to act in a weird way on seeing a palindrome. <br>To cure him of this fatal disease, doctors from all over Hyderabad discussed his fear and decided to expose him to large number of palindromes. <br><br>To do this, they decided to play a game with Vinay. The rules of the game are as follows:<br><br>Vinay has to supply a string S. The doctors have to add or insert characters to the string to make it a palindrome. Characters can be inserted anywhere in the string.<br> The doctors took this game very lightly and just appended the reverse of S to the end of S, thus making it a palindrome. <br>For example, if S = <i>"fft"</i>, the doctors change the string to <i>"ffttff"</i> and if S = <i>"MVSR"</i>, doctors change the string to "MVSRRSVM". Nowadays, Vinay is cured of the disease (having been exposed to a large number of palindromes), but he still wants to continue the game by his rules. He now asks the doctors to insert the minimum number of characters needed to make S a palindrome. <br><br>Help the doctors accomplish this task.<br>For instance, if S = <i>"fft"</i>, the doctors should change the string to <i>"tfft"</i>, adding only 1 character.
+        <br>
+        <br>
+        <br>
+        <b>Input:</b> <br>
+            Each test case consists of one line, the string S. The length of S will be no more than 6100 characters, and S will contain no whitespace characters.
+        <br><br>
+        <b>Output:</b>
+        <br>
+        For each test case output one line containing a single integer denoting the minimum number of characters that must be inserted into S to make it a palindrome.</p>
+    </div>
+    <div class="page-header">
+        <b style="margin-left: 15px">Sample Input:</b><br>
+        <p style="font-size: 14px; margin-left: 15px">fft<br>MVSR
+
+        <br><br>
+        <b>Sample Output:</b><br>
+        1<br>3</p>
+        <br>
+        <br>
+        <b style="margin-left: 15px">Explanation:</b><br>
+        <p style="font-size: 14px; margin-left: 15px">In the first saample testcase, as S = <i>"fft"</i>, the doctors should change the string to <i>"tfft"</i>, adding only 1 character. But in the second test case, we need to add atleast 3 characters to make it a palindrome.</p>
+
+    </div>
+</body>
+</html>

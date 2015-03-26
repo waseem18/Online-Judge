@@ -1,0 +1,86 @@
+<!--© Copyright Wasim Thabraze.
+    License: MIT
+    'Dubhacking' name is copyright of Wasim Thabraze as per 2015 and cannot be used unless or untill the prior permission.
+    Contact: www.thabraze.in | email: wasim@thabraze.insrc
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Wasim Thabraze, WASIM,www.thabraze.in, gitpromote,waseem18" content="Dubhacking is an online judge. © Copyright 2015 Wasim Thabraze | Dubhacking" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Dubhacking-Problem</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <script src="js/timer.js"></script>
+    <style>
+    .submitLink {
+        background-color: transparent;
+        text-decoration: none;
+        color: blue;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="logo" style="margin-left: 555px">
+                <h1 style="font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Dubhacking</h1>
+     </div>
+     <div style="font size: 32px; display: inline-block" id="counter"></div>
+
+     <div style="float: right">
+        <p style="font-size: 16px; margin-right: 3cm"><a href="https://dubhacking.appspot.com/user/{{username_session}}">{{username_session}} </a>|<a href="https://dubhacking.appspot.com/scoreboard"> Scoreboard </a> | <a href="https://dubhacking.appspot.com/logout"> Logout</a></p>
+    </div>
+    <input type="hidden" name="prob" value="A"><p>Problem : Yet Another Dubhacking contest | Time limit: 0.3secs | Memory: 256MB | <a class="submitLink" href="https://dubhacking.appspot.com/submit">Submit code</a></p>
+    <div class="jumbotron" style="margin-top: 17px">
+        <p style="font-size: 14px; margin-left: 15px">    Dubhacking is planning to conduct a programming contest in the future. Only a team of three students can participate. Assuming there are n students willing to participate (n%3==0) and all students are numbered from 1 to n inclusive. During formation of the teams, some pairs of students wants to be on the same team. Besides, if the i-th student wants to be on the same team with the j-th one, then the j-th student wants to be on the same team with the i-th one. Wasim and Prashanth want good results from the contest. So they put a condition to hold: if the i-th student wants to be on the same team with the j-th, then the i-th and the j-th students must be on the same team. Also, it is obvious that each student must be on exactly one team.<br>
+        Help them in dividing the teams in the way they want. 
+        <br>
+        <br>
+        <b>Constraints: </b><br>
+            3<=n<=47 such that n%3==0 and 0<=m<=1128 <br>
+            1 ≤ ai < bi ≤ n<br> 
+        <br><br>
+        <b>Input:</b> <br>
+            The first line of the input contains integers n and m. <br>Then follow m lines, each contains a pair of integers ai, bi (1 ≤ ai < bi ≤ n) — the pair ai, bi means that students with numbers ai and bi want to be on the same team.<br><br>
+            It is guaranteed that n is divisible by 3. It is guaranteed that each pair ai, bi occurs in the input at most once.
+        <br><br>
+        <b>Output:</b>
+        <br>
+        If the required division into teams doesn't exist, print number -1. 
+        <br>Otherwise, print  lines. In each line print three integers xi, yi, zi (1 ≤ xi, yi, zi ≤ n) — the i-th team.<br><br>
+        There might be multiple answers for few testcases. You can print any of them. Our judging algorithm and server is intelligent enough! :D</p>
+    </div>
+    <div class="page-header">
+        <b style="margin-left: 15px">Sample Input:</b><br>
+        <p style="font-size: 14px; margin-left: 15px">3 0
+
+        <br><br>
+        <b>Sample Output:</b><br>
+        3 2 1<br></p>
+        <br>
+        <br>
+        <b style="margin-left: 15px">Sample Input:</b><br>
+        <p style="font-size: 14px; margin-left: 15px">6 4<br>1 2<br>2 3<br>3 4<br>5 6<br> 
+
+        <br><br>
+        <b>Sample Output:</b><br>
+        -1<br></p>
+        <br>
+        <br>
+        <b style="margin-left: 15px">Sample Input:</b><br>
+        <p style="font-size: 14px; margin-left: 15px">3 3<br>1 2<br>2 3<br>1 3
+
+        <br><br>
+        <b>Sample Output:</b><br>
+        3 2 1<br></p>
+        <br>
+        <br>
+        </p>
+
+    </div>
+</body>
+</html>
